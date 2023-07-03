@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { Anime, AnimeQuery, getTopAnimes } from "../api";
 import AnimeCard from "../components/AnimeCard";
 
-const HomePage = () => {
+const AnimeGrid = () => {
   const [data, setData] = useState<Anime[] | null>(null);
   const query: AnimeQuery = {
     type: "tv",
@@ -20,13 +20,12 @@ const HomePage = () => {
   }, []);
 
   return (
-    <>
-      <h1>HomePage</h1>
+      <div className="">
       {data?.map((anime) => {
         return <AnimeCard key={anime.rank} anime={anime} />;
       })}
-    </>
+      </div>
   );
 };
 
-export default HomePage;
+export default AnimeGrid;

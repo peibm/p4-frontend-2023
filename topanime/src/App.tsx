@@ -1,12 +1,13 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import HomePage from "./pages/HomePage";
+import AnimeGrid from "./pages/AnimeGrid";
 import DetailsPage from "./pages/DetailsPage";
+
 
 function App() {
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<HomePage />} />
+        <Route path="/" element={<AnimeGrid />} />
         <Route path="/anime/:id" element={<DetailsPage />} />
       </Routes>
     </Router>
