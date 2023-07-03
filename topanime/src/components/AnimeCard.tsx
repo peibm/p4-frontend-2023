@@ -13,7 +13,7 @@ const AnimeCard: React.FC<AnimeCardProps> = ({ anime }) => {
 
   // Usa la pequeña imagen URL de las imágenes webp
   // Si no encuentra webp, usa jpg como respaldo.
-  const smallImageUrl = anime.images.webp?.medium_image_url || anime.images.jpg.image_url
+  const smallImageUrl = anime.images.webp?.image_url || anime.images.jpg.image_url
   console.log(smallImageUrl)
   return (
     <div>
