@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { Anime, AnimeQuery, getTopAnimes } from "../api";
 import AnimeCard from "../components/AnimeCard";
 
