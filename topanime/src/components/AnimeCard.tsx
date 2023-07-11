@@ -23,6 +23,7 @@ const AnimeCard: React.FC<AnimeCardProps> = ({ anime }) => {
       <div className="">
         <Link
           to={`/anime/${anime.rank}`}
+          state={{data: anime}}
           className=""
         >
           <img
@@ -30,7 +31,7 @@ const AnimeCard: React.FC<AnimeCardProps> = ({ anime }) => {
             alt={defaultTitle}
             className=""
           />
-          <h2 className="mt-2">{defaultTitle}</h2>
+          <h2 className="">{defaultTitle}</h2>
         </Link>
         <div className="">
           {anime.rank}
